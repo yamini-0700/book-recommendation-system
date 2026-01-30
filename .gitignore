@@ -1,0 +1,19 @@
+﻿# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Large Data
+data/
+generated_covers/
+models/content_similarity.npy
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
