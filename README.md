@@ -1,37 +1,51 @@
 # 📚 Book Recommendation System
 ## Final Year Project
 
-A machine learning-based book recommendation system with reader analytics dashboard.
+A machine learning-based book recommendation system with an interactive reader analytics dashboard.
+
+---
 
 ## ✨ Features
-- **Hybrid Recommendation**: Content-based + collaborative filtering
-- **ML Models**: Random Forest (85.3% accuracy), Logistic Regression, Decision Trees
-- **Analytics Dashboard**: User behavior analysis and visualization
-- **Web Interface**: Streamlit application for easy interaction
-- **Complete Pipeline**: Data processing → ML training → Deployment
+
+- **Hybrid Recommendation System**  
+  Combines content-based filtering and collaborative filtering techniques.
+
+- **Machine Learning Models**  
+  Random Forest (85.3% accuracy), Logistic Regression, and Decision Tree models.
+
+- **Reader Analytics Dashboard**  
+  Provides insights into user behavior, preferences, and wishlist trends.
+
+- **Web Interface**  
+  Streamlit-based application for easy and interactive usage.
+
+- **End-to-End Pipeline**  
+  Data collection → preprocessing → model training → recommendation → analytics.
+
+---
 
 ## 🚀 Quick Start
+
 ```bash
-# 1. Clone repository
+# Clone repository
 git clone https://github.com/yamini-0700/book-recommendation-system.git
 cd book-recommendation-system
 
-# 2. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 3. Run application
-streamlit run app.py                                                
+# Run application
+streamlit run app.py
+
 
 📊 ML Models Performance
-Model	    Accuracy	        Best For
-Random      Forest	85.3%	    Overall prediction
-Logistic    Regression	78.2%	Baseline comparison
-Decision    Tree	82.1%	    Interpretability
-
+Model	                Accuracy	Best For
+Random Forest	        85.3%	    Overall prediction
+Logistic Regression   	78.2%	    Baseline comparison
+Decision Tree	        82.1%	    Interpretability
 
 
 ## 📁 Project Structure
-
 
 Book_recommendation_system/
 ├── app.py # Main Streamlit application
@@ -40,36 +54,64 @@ Book_recommendation_system/
 ├── requirements.txt # Python dependencies
 ├── README.md # Project documentation
 │
-├── src/ # Source code modules
+├── report/ # Project documentation files
+│ ├── Project_Work_document FINAL.pdf # Project report
+│ └── book recommendation.pptx # Project presentation
+│
+├── src/
 │ ├── models/ # Recommendation algorithms
-│ │ ├── collaborative.py # Collaborative filtering
-│ │ ├── content_based.py # Content-based filtering
-│ │ ├── hybrid.py # Hybrid model
-│ │ └── recommender.py # Main recommender class
-│ ├── analytics/ # Analytics functions
-│ │ └── wishlist_analytics.py # Wishlist analysis
-│ ├── data/ # Data utilities
-│ │ └── load_data.py # Data loading
-│ └── utils/ # Helper functions
+│ │ ├── collaborative.py
+│ │ ├── content_based.py
+│ │ ├── hybrid.py
+│ │ └── recommender.py
+│ ├── analytics/
+│ │ └── wishlist_analytics.py
+│ ├── data/
+│ │ └── load_data.py
+│ └── utils/
 │
-├── notebook/ # Jupyter notebooks
-│ ├── 01_data_overview.ipynb # Data exploration
-│ ├── 02_data_cleaning.ipynb # Data preprocessing
-│ ├── 03_eda_feature_engineering.ipynb # Feature engineering
-│ ├── 04_baseline_models.ipynb # Initial ML models
-│ ├── 05_model_optimization.ipynb # Model tuning
-│ └── 06_reader_wishlist_analytics.ipynb # Analytics
+├── notebook/
+│ ├── 01_data_overview.ipynb
+│ ├── 02_data_cleaning.ipynb
+│ ├── 03_eda_feature_engineering.ipynb
+│ ├── 04_baseline_models.ipynb
+│ ├── 05_model_optimization.ipynb
+│ └── 06_reader_wishlist_analytics.ipynb
 │
-├── models/ # Trained ML models
-│ ├── final_random_forest.pkl # Random Forest model (85.3% accuracy)
-│ ├── content_vectorizer.pkl # TF-IDF vectorizer
-│ ├── scaler.pkl # Feature scaler
-│ └── sample_info.pkl # Sample data
+├── models/
+│ ├── final_random_forest.pkl
+│ ├── content_vectorizer.pkl
+│ ├── scaler.pkl
+│ └── sample_info.pkl
 │
-├── data/ # Datasets
-│ ├── raw/ # Original data
-│ └── processed/ # Cleaned data
+├── data/
+│ ├── raw/
+│ └── processed/
 │
-├── assets/ # Static files
-├── generated_covers/ # Generated book covers
-└── venv/ # Virtual environment
+├── assets/
+├── generated_covers/
+└── venv/
+
+🛠️ Technologies Used
+
+Python 3.9+
+
+Scikit-learn
+
+Streamlit
+
+Pandas & NumPy
+
+Matplotlib & Seaborn
+
+Jupyter Notebook
+
+📄 Project Documentation
+
+📘 Project Report: report/Project_Work_document FINAL.pdf
+
+📊 Project Presentation: report/book recommendation.pptx
+
+📌 Conclusion
+
+This project demonstrates the effective use of machine learning techniques to build a personalized book recommendation system with reader analytics. The system is scalable, user-friendly, and suitable for real-world applications.
